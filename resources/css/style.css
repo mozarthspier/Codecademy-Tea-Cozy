@@ -1,0 +1,60 @@
+html {
+    box-sizing: border-box;
+    background-color: black;
+    height: 2000px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+}
+
+#logo {
+    height: 100%;
+    width: 50%;
+    flex-grow: 1;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav {
+    height: 100%;
+    width: 50%;
+    float: right;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    max-width: 400px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+nav ul li a {
+    color: grey;
+}
