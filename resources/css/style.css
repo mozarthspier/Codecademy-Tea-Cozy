@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
     background-color: black;
-    height: 2000px;
 }
 
 *,
@@ -13,8 +12,11 @@ html {
 header {
     height: 70px;
     width: 100%;
+    background-color: black;
     border-bottom: 1px solid seashell;
     position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 #logo {
@@ -57,4 +59,62 @@ nav ul li {
 
 nav ul li a {
     color: grey;
+}
+
+main {
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#banner {
+    background-image: url("../images/img-mission-background.jpg");
+    width: 1200px;
+    height: 700px;
+    display: flex; 
+    align-items: center;
+}
+
+#banner-strip {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+h2, h4 {
+    color: grey;
+    margin: 0.75rem auto;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+article {
+    width: 1000px;
+    margin: 75px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+article h2, h4 {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+article figure {
+    margin: 10px;
+}
+
+article img {
+    height: 200px;
+    width: 300px;
 }
