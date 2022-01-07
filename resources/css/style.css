@@ -1,6 +1,10 @@
 html {
     box-sizing: border-box;
     background-color: black;
+    font-family: Helvetica;
+    opacity: 0.9;
+    color: seashell;
+    font-size: 22px;
 }
 
 *,
@@ -13,6 +17,7 @@ header {
     height: 70px;
     width: 100%;
     background-color: black;
+    opacity: 0.9;
     border-bottom: 1px solid seashell;
     position: fixed;
     top: 0;
@@ -51,14 +56,12 @@ nav ul {
     align-items: center;
 }
 
-nav ul li {
-    font-weight: bold;
-    font-size: 1.25rem;
+nav li {
     text-align: center;
 }
 
-nav ul li a {
-    color: grey;
+nav a {
+    color: seashell;
 }
 
 main {
@@ -79,22 +82,17 @@ main {
 
 #banner-strip {
     width: 100%;
-    background-color: black;
     text-align: center;
+    background-color: black;
+    opacity: 0.9;
 }
 
 h2, h4 {
-    color: grey;
     margin: 0.75rem auto;
-    font-weight: bold;
 }
 
-h2 {
-    font-size: 2rem;
-}
-
-h4 {
-    font-size: 1.25rem;
+#tea-month {
+    scroll-margin-top: 70px;
 }
 
 article {
@@ -117,4 +115,72 @@ article figure {
 article img {
     height: 200px;
     width: 300px;
+}
+
+#locations {
+    height: 500px;
+    width: 1200px;
+    background-image: url("../images/img-locations-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template: 1fr 3fr / repeat(3, 300px);
+    grid-template-areas: "title title title"
+                         "downtown east-bayside oakdale";
+    grid-gap: 15px 40px;
+    justify-content: center;
+}
+
+#locations h2 {
+    align-self: end;
+    margin-bottom: 0;
+}
+
+#locations p {
+    margin: 2rem auto;
+}
+
+#locations div {
+    background-color: black;
+    width: 300px;
+    text-align: center;
+    align-self: start;
+    opacity: 1;
+}
+
+#locations h2 {
+    grid-area: title;
+}
+
+#downtown {
+    grid-area: downtown;
+}
+
+#east-bayside {
+    grid-area: east-bayside;
+}
+
+#oakdale {
+    grid-area: oakdale;
+}
+
+footer {
+    position: relative;
+    top: 70px;
+    display: block;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+footer address {
+    height: 200px;
+    text-align: center;
+    font-style: normal;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: normal;
+    color: seashell;
 }
